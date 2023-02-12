@@ -1,16 +1,18 @@
 <html lang="de">
-    <head>
+    <head> <script src="button.js"></script>
     <title>Dave Jones BPM Counter </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-    </style>
+    <link href="layout.css" rel="stylesheet"/>
     </head>
     <body>
-        <div class=""header">
+        <div class="header">
         <h1>Dave Jones BPM Counter</h1>
-        <p>tap</p>
+        <p id="demo"> tap in sync</p>
+        <button type="button" onclick="changebutton();counter();bpmcalculator()">
+            TAP</button>
+        <p id="taps"> </p> </p>
+        <p id="bpm"> BPM </p> </p>
     </div>
     </body>
 </html>
