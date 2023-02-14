@@ -1,1 +1,24 @@
-body {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;background-color: rgb(46, 212, 146);}
+body {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;background-color: rgb(46, 212, 146);
+    text-align: center;
+
+
+}
+
+.button {
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 128px 128px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    border-radius: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+  }
+
+  .button:active {
+    background-color: #fafafa;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
+  }

@@ -15,24 +15,38 @@ let buttonttime
 
 function timestamp(){
     buttontime = new Date().getTime()                    //Zeitanzeige in Sekunden in der Konsole
-console.log(buttontime)
+    console.log(buttontime)
 }
 
-let start = null                                   //zeitlichen Startpunkt festlegen durch ersten Tap
-if(!start){
-start=(new Date().getTime() )
-}
+let start = null                                   
 
 
 function bpmcalculator(){
 
-const end = new Date().getTime()
+    
+                                   
+    if(!start){
+        start=(new Date().getTime() )
+        return;
+    }
+    const end = new Date().getTime()
 
-let bpm
+    let bpm
 
-console.log(taps,end, start)
+    console.log(taps,end, start)
 
-bpm = (taps / (end - start)*60000)                   // BPM Berechnungsfunktion
+    bpm = Math.round((taps / (end - start)*60000))             // BPM Berechnungsfunktion
 
-document.getElementById("bpm").innerHTML = bpm
+    document.getElementById("bpm").innerHTML = bpm + " BPM";
+}
+
+function resetcounter(){
+
+    start = null  
+    bpm = 0
+    end= null
+    taps = 0
+
+    document.getElementById("bpm").innerHTML = bpm
+    document.getElementById("taps").innerHTML = taps
 }
