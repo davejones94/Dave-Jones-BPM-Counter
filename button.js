@@ -3,7 +3,7 @@ function changebutton () {
     console.log("demo");
 }
 
-let taps = 0;
+let taps = -1;
 
 function counter(){ 
     taps+= 1;
@@ -18,7 +18,7 @@ function timestamp(){
     console.log(buttontime)
 }
 
-let start = null                                   
+let start = null                                  
 
 
 function bpmcalculator(){
@@ -45,7 +45,7 @@ function resetcounter(){
     start = null  
     bpm = 0
     end= null
-    taps = 0
+    taps = -1
 
     document.getElementById("bpm").innerHTML = bpm
     document.getElementById("taps").innerHTML = taps
