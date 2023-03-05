@@ -3,8 +3,8 @@
   "scripts": {
     "format": "yarn prettier --check .",
     "format:fix": "yarn prettier --write .",
-    "lint": "yarn run eslint --ignore-path .prettierignore .",
-    "lint:fix": "yarn run eslint --ignore-path .prettierignore --fix ."
+    "lint": "yarn run eslint .",
+    "lint:fix": "yarn run eslint --fix ."
   },
   "devDependencies": {
     "eslint": ">=5.16.0",
