@@ -1,0 +1,14 @@
+{
+  "name": "djbpm",
+  "scripts": {
+    "format": "yarn prettier --check .",
+    "format:fix": "yarn prettier --write .",
+    "lint": "yarn run eslint --ignore-path .prettierignore .",
+    "lint:fix": "yarn run eslint --ignore-path .prettierignore --fix ."
+  },
+  "devDependencies": {
+    "eslint": ">=5.16.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "2.8.4"
+  }
+}
