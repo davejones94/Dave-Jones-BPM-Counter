@@ -41,7 +41,6 @@ function resetcounter() {
   bpm = 0;
   end = null;
   taps = -1;
-  const a = ["a", "b"];
 
   document.getElementById("bpm").innerHTML = bpm;
   document.getElementById("taps").innerHTML = taps;
